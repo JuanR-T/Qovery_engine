@@ -1,0 +1,760 @@
+
+@font-face {
+    font-family: 'HK Grotesk';
+    src:url('fonts/HKGrotesk-Bold.otf')format('truetype');
+}
+@font-face{
+    font-family: 'SF UI Text';
+    src:url('SFUIText-Regular.ttf')format('truetype');
+}
+* {
+    box-sizing: border-box;
+}    
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0%;
+}    
+
+header  
+{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background-color:#151B2B ;
+}
+footer
+{
+    height: 15vh;
+    width: 100%;
+    background-color:#151B2B ;
+}
+                                            /* Pages */
+.FirstPage
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #151B2B;
+}    
+.SecondPage
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.ThirdPage
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: #385992;
+}    
+
+.FourthPage
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: raw;
+    flex-wrap: wrap;
+    padding: 4%;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: #F9F9FD;
+}    
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10%;
+    background: url('Qovery_logo.png') left/60px no-repeat;
+}    
+
+header h1
+{
+    margin-left: 20%;
+    color: #A8A8C1;
+    font-size: 2.5em;
+}    
+.Title,.socials
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+}    
+
+.content
+{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}    
+.description
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 8%;
+    width: 50%;
+    height: 100%;
+}
+.category
+{
+    width: 70%;
+    text-align: center;
+}    
+
+.secondpageimg
+{
+    height: 60%;
+    width: 60%;
+    background: url('Steps.png') center/contain no-repeat
+}   
+                                            /*Buttons*/
+input
+{
+    width: 160px;
+    height: 30px;
+    margin-right: 2%;
+    font-family: 'SF UI Text';
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}   
+input:focus
+{
+    outline: none;
+}
+button:focus
+{
+    outline: none;
+}   
+.btn1,.btn2
+{
+    width: 150px;
+    height: 30px;
+    margin: 0px 3px;
+    font-family: 'SF UI Text';
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px 3px 3px 3px;
+}
+.btn1
+{
+    background-color:  #454658;
+} 
+.btn2
+{
+    background-color: #6578C0;
+}
+
+                                                /* Titles */
+h1
+{
+    font-size: 3em;
+    color: white;
+    font-family: 'HK Grotesk';
+    width: 330px;
+}    
+
+h2, h3
+{
+    font-size: 3em;
+    font-family: 'HK Grotesk';
+    color: #454658;
+    width: 50%;
+    text-align: center;
+}
+h3
+{
+    color: white;
+}
+                                                    /* Paragraphs */
+p
+{
+    font-family: 'SF UI Text';
+}
+p.first
+{
+    font-size: 1.6em;
+    color: white;
+    width: 100%;
+    text-align: justify;
+    font-family: 'HK Grotesk';
+}    
+p.second
+{
+    font-size: 1.2em;
+    color: #8686B2;
+    width: 550px;
+    text-align: justify;
+}    
+p.third
+{
+    font-size: 1.2em;
+    color: #454658;
+    width: 52%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+                                                    /* Thirdpage Button List */
+.card
+{
+    list-style: none;
+    font: 1.6em 'HK Grotesk';
+    color: white;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid white;
+}
+.card { background: #385992; }
+.card:nth-child(odd) { background: #304977; }
+.textcounter
+{
+    font-size: 2em;
+    width: 100%;
+}
+                                                    /* Images */
+.Title img
+{
+    margin-top: 6px;
+}
+
+                                                    /* Min width 1370px Media Query */
+@media (min-width:1370px)
+{
+    .FourthPage>div
+    {
+        flex: 0 40%;
+        height: 45vh;
+        text-align: left;
+        justify-content: left;
+        position: relative;
+    }
+                                                    /* Images */
+    .firstpageimage
+    {
+        width: 80%;
+        height: 800px;
+        top: -60px;
+        padding-left: 60px;
+        position: relative;
+        background: url('cloud.png') center/contain no-repeat;
+        z-index: 10;
+    }
+    .qoveryPurple
+    {
+        position: absolute;
+        left: 0%;
+        top: 5.66%;
+        bottom: 6.29%;
+    }
+    .qoveryResilience
+    {
+        position: absolute;
+        width: 305px;
+        height: 169px;
+        left: -1px;
+        top: -10px;
+    }
+    .qoveryTools
+    {
+        position: absolute;
+        width: 262px;
+        height: 233px;
+        left: 0px;
+        top: 10px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .qoveryExtensible
+    {
+        position: absolute;
+        left: 0%;
+        right: 1.52%;
+        top: 10px;
+        bottom: 45.99%;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+                                                    /* Titles */
+    h4
+    {
+        position: absolute;
+        width: 370px;
+        height: 26px;
+        left: 0px;
+        top: 175px;
+        font: normal bold 24px 'Hk Grotesk'; 
+        color: #454658;
+        margin-top: 20px;
+    }
+
+    h4.tools, h4.extensible
+    {
+        left: 0px;
+        top: 230px;
+    }
+
+                                                    /* Paragraphs */
+    p 
+    {
+        font: normal normal 15px/150% 'SF UI Text';
+    }
+    p.fourth, p.tools, p.extensible
+    {
+        position: absolute;
+        width: 500px;
+        height: 144px;
+        left: 0px;
+        color: #454658;
+    }
+    
+    p.fifth, p.sixth, p.seventh, p.eighth
+    {
+        position: absolute;
+        width: 63px;
+        height: 16px;
+        left: 0px;
+        color: #5D64D2;
+        text-transform: uppercase;
+    }
+    p.fifth, p.sixth, p.seventh, p.eighth
+    {
+        font: normal bold 12px/150% 'SF UI Text';
+    }
+    p.fourth
+    {
+        top: 210px;
+    }
+    p.tools, p.extensible
+    {
+        top: 270px;
+    }
+    p.fifth
+    {
+        top: 330px;
+    }
+    p.sixth
+    {
+        top: 398px;
+    }
+    p.seventh
+    {
+        top: 410px;
+    }
+    p.eighth
+    {
+        top: 350px;
+    }
+                                                /* UL List */
+    ul 
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+    input.btn3
+    {
+        width: 220px;
+        height: 50px;
+        font-size: 22px;
+        border-radius: 25px;
+        background: linear-gradient(315deg, #3c5f9b, #325083);
+        box-shadow:  -6px -6px 9px #223557,
+                    6px 6px 9px #4e7dcb;
+    }    
+}    
+                                                /* Media Query max width 1369px  */
+@media (max-width:1369px)
+{
+                                                /* Pages */
+    .content
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .firstpageimage
+    {
+        width: 90%;
+        height: 80%;
+        top: 50px;
+        position: relative;
+        background: url('cloud.png') center/contain no-repeat;
+    }
+    .description
+    {
+        width: 100%;
+        align-items: center;
+    }
+    .socials 
+    {
+        justify-content: center;
+    }
+    .Title
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .FourthPage
+    {
+        height: 100vh;
+        width: 100%;
+        padding: 4%;
+        position: relative;
+        background: #F9F9FD;
+    }
+    .FourthPage>div
+    {
+        height: 25%;
+        width: 100%;
+        position: relative;
+    }
+                                        /* UL list */
+    ul 
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+                                        /*Images */
+    .qoveryPurple
+    {
+        position: absolute;
+        right: 0%;
+        left: 74%;
+    }
+    .qoveryResilience
+    {
+        position: absolute;
+        right: 0%;
+        left: 65%;
+    }
+    .qoveryTools
+    {
+        position: absolute;
+        right: 0%;
+        left: 70%;
+        height: 200px;
+        width: 229px;
+    }
+    .qoveryExtensible
+    {
+        position: absolute;
+        right: 0%;
+        left: 65%;
+        height: 180px;
+        width: 290px;
+    }
+                                            /* Titles */
+    h4, h4.extensible
+    {
+        width: 370px;
+        height: 26px;
+        left: 0px;
+        top: 175px;
+        font: normal bold 24px/110% 'Hk Grotesk'; 
+        color: #454658;
+        margin: 20px 0px 0px 0px;
+    }
+                                         /* Paragraphs */
+     
+     p.second, p.first
+    {
+        text-align: center;
+    }
+    p.fourth, p.tools, p.extensible
+    {
+        position: absolute;
+        width: 600px;
+        height: 100px;
+        left: 0px;
+        color: #454658;
+        margin: 0px;
+        font: normal normal 15px/150% 'SF UI Text';
+        text-align: justify;
+    }
+    
+    p.fifth, p.sixth, p.seventh, p.eighth
+    {
+        position: absolute;
+        width: 63px;
+        height: 16px;
+        left: 0px;
+        color: #5D64D2;
+        text-transform: uppercase;
+        font:normal bold 12px/130% 'SF UI Text';
+        text-transform: uppercase;
+        margin: 0px;
+        left: 0px;
+    }
+    p.fifth
+    {
+        bottom: 20px;
+    }
+
+    p.sixth
+    {
+        bottom: -20px;
+    }
+    p.seventh
+    {
+        bottom: -5px;
+    }
+    p.eighth
+    {
+        bottom: 40px;
+    }
+                                        /* Input */
+    input.btn3
+    {
+        width: 100px;
+        height: 25px;
+        font-size: 13px;
+        border-radius: 25px;
+        background: linear-gradient(315deg, #3c5f9b, #325083);
+        box-shadow:  -6px -6px 9px #223557,
+                    6px 6px 9px #4e7dcb;
+    }    
+}
+                                        /* Media Query max width 968px */
+@media (max-width: 968px)
+{
+    .FourthPage>div
+    {   
+        position: relative;
+        width: 90%;
+        margin: 10px;
+    }
+                                        /* Paragraphs */
+    p.fourth,p.extensible,p.tools
+    {
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+        height:60px;
+    }
+    p.fifth,p.sixth,p.seventh
+    {
+        position: absolute;
+        bottom:20px;
+        width: 100%;
+        text-align: center;
+    }
+    p.eighth 
+    {
+        position: absolute;
+        bottom:45px;
+        width: 100%;
+        text-align: center;
+    }
+                                        /* Titles */
+    h4, h4.extensible,h4.tools
+    {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    div br {
+        display: none;
+    }
+                                         /* ThirdPage Button List */
+    .card
+    {
+        font-size: 1.2em;
+    }
+    .textcounter
+    {
+        font-size: 1.3em;
+    }
+                                        /* Images */
+    .qoveryPurple
+    {
+        left: 45%;
+        bottom: -26%;
+        height: 70px;
+        width:70px;
+    }
+    .qoveryExtensible, .qoveryPurple, .qoveryResilience,.qoveryTools
+    {
+        position: absolute;
+    }
+    .qoveryResilience
+    {
+        left: 43%;
+        height: 65px;
+        width:110px;
+        bottom: -25%;
+    }
+    .qoveryTools
+    {
+        left: 45%;
+        height: 80px;
+        width:80px;
+        bottom: -28%;
+    }
+    .qoveryExtensible
+    {
+        left: 43%;
+        height: 60px;
+        width:100px;
+        bottom: -2%;
+    }
+}
+                                        /* Media Query max width 768px */
+@media (max-width:768px)    
+{
+                                        /* Images */
+    .firstpageimage
+    {
+        height: 60%;
+        width: 60%;
+    }
+    .secondpageimg
+{
+    height: 80%;
+    width: 80%;
+    background: url('Steps.png') center/contain no-repeat
+}   
+                                        /* Paragraphs */
+    p.fifth,p.sixth,p.seventh,p.eighth
+    {
+        display: none;
+    }
+
+    p.first, p.second,p.third
+    {
+        font-size: 1em;
+        width: 80%;
+        height: 30%;
+    }
+    p.fourth, p.tools, p.extensible
+    {
+        font-size: 10px;
+    }
+    .FourthPage>div
+    {
+        margin: 0px;
+    }
+                                        /* Titles */
+    h1, h2
+    {
+        font-size: 2em;
+        text-align: center;
+    }
+    .logo
+    {
+        margin-left: 20%;
+    }
+    .logo h1
+    {
+        text-align: left;
+    }
+    h3, h4,h4.extensible 
+    {
+       font-size: 20px;
+       text-align: center;
+       height: 10px;
+    }  
+                                        /* Pages */
+    .FirstPage, .SecondPage, .ThirdPage, .FourthPage
+    {
+        height: 80vh;
+    }
+    .qoveryExtensible, .qoveryPurple, .qoveryResilience,.qoveryTools
+    {
+        left: 40%;
+        bottom: -12%;
+    }
+    input 
+    {
+        margin: 5px 0px;
+    }
+}
+                                        /* Media Query max width 450px */
+@media (max-width:450px)
+{
+                                        /* Button list */
+    .card,.textcounter
+    {
+        font-size: 13px;
+    }
+                                        /* Images */
+    .qoveryPurple,.qoveryTools
+    {
+        width: 60px;
+        height: 60px;
+        bottom: -15%;
+    }
+    .qoveryResilience
+    {
+        width: 100px;
+        height: 60px;
+        bottom: -15%;
+        left: 35%;
+    }
+    .qoveryExtensible
+    {
+        left: 30%;
+        width: 120px;
+        height: 70px;
+        bottom: -2%;
+    }
+    .firstpageimage
+    {
+        height: 50%;
+        width: 50%;
+        top: 20px;
+        right: -5%;
+    }
+                                        /* Titles */
+    h4,h4.extensible,h4.tools
+    {
+        font-size: 15px;
+    }
+    h3 
+    {
+        width: 100%;
+    }
+}
+                                        /* Media Query max width 375px */
+@media (max-width:375px)
+{
+    .container>img
+    {
+        display: none;
+    }
+    .firstpageimage
+    {
+        height: 55%;
+        width: 55%;
+        top: 5px;
+        right: -5%;
+    }
+}
